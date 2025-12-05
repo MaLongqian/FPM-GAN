@@ -1,6 +1,6 @@
 """General-purpose test script for image-to-image translation.
     Test a pix2pix model:
-        python test.py --dataroot ./datasets/facades --name facades_pix2pix --model FPM_GAN --direction BtoA
+        python test.py --dataroot ./datasets/facades --name facades_FPM_GAN --model FPM_GAN --direction BtoA
 """
 import os
 from options.test_options import TestOptions
