@@ -3,7 +3,7 @@ import torch
 import torch.nn as nn
 import torch.fft
 
-# 傅里叶损失
+
 class FSDLoss(nn.Module):
 
     def __init__(self, loss_weight=1.0, alpha=1.0):
@@ -13,7 +13,7 @@ class FSDLoss(nn.Module):
 
     def loss_formulation(self, recon_freq, real_freq):
         """Calculate the loss function"""
-        # 构建谱重矩阵”或“构造谱权重矩阵
+        
         matrix_tmp = (recon_freq - real_freq) ** 2
         matrix_tmp = torch.sqrt(matrix_tmp[..., 0] + matrix_tmp[..., 1]) ** self.alpha
 
