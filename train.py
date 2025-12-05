@@ -2,7 +2,7 @@
 
 Example:
     Train a FPM_GAN model:
-        python train.py --dataroot ./datasets/facades --name facades_pix2pix --model FPM_GAN --direction BtoA
+        python train.py --dataroot ./datasets/facades --name facades_FPM_GAN --model FPM_GAN --direction BtoA
         python -m visdom.server
 
 """
